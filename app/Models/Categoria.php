@@ -13,4 +13,14 @@ class Categoria extends Model
         'nombre',
         'slug',
     ];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
+    public function establecimientos()
+    {
+        return $this->hasMany(Establecimiento::class);
+    }
 }

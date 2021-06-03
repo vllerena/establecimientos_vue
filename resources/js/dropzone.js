@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    if (document.querySelector('#dropzone'))
+    if (document.querySelector('#dropzone')){
         Dropzone.autoDiscover = false;
         const dropzone = new Dropzone('div#dropzone', {
             url: '/imagenes/store',
@@ -31,4 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     })
             }
         });
+    }
+
 })
